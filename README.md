@@ -12,9 +12,9 @@ Eventually, we would take in input through the first keyboard but for now we are
 As we worked with our microprocessor made last semester, we discovered there was much to do in order to make putchar possible. We also had to create Call and Return as our microprocessor did not currently have it. Then, we adjusted our original concept to make sure everything could flow in the correct paths and ultimately output into the terminal correctly. 
 
 Notes for microprocessor:
--works on all lab 5 tests
--does not work on lab 6 test 13 (has CBON, CCBOFF, MOVE)
--does not work on lab 6 test 14 (has CALL, RETURN)
--does not work on lab 6 test 17 (has CALL, RETURN)
--does not work on lab 6 test 18 (has CALL, RETURN)
--does not work on lab 6 test 19 (has CALL, RETURN)
+- works on all lab 5 tests
+- does not work on lab 6 test 13 (has CBON, CCBOFF, MOVE)
+- does not work on lab 6 test 14 (has CALL, RETURN)
+- does not work on lab 6 test 17 (has CALL, RETURN)
+- does not work on lab 6 test 18 (has CALL, RETURN)
+- does not work on lab 6 test 19 (has CALL, RETURN)
