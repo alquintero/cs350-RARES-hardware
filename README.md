@@ -1,2 +1,2 @@
 # cs350-RARES-hardware
-This if for our hardware team.
+This is a design doc for our hardware team.
