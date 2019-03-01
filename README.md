@@ -4,7 +4,6 @@ This is for our hardware team.
 ## DESIGN DOC
 
 *For 3/3 Due Date:*
-
 Our original idea for the hardware was to create a currently unused opcode for our putchar function and process it through the ALSU similarly to previously created functions in CS240. 
 
 Two parameters: 
