@@ -1,6 +1,11 @@
 # cs350-RARES-hardware
 This is for our hardware team.
 
+NOTE: To open .circ files:
+1. click "Clone or Download"
+2. click "Download Zip"
+3. .circ file should be in a folder in the Downloads on your computer, just double click on it to open it with logisim
+
 ## DESIGN DOC
 
 *For 3/3/18 Due Date.*
