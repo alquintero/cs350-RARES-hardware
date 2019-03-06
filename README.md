@@ -13,8 +13,8 @@ As we worked with our microprocessor made last semester, we discovered there was
 
 Notes for microprocessor:
 - works on all lab 5 tests
-- does not work on lab 6 test 13 (has CBON, CCBOFF, MOVE)
-- does not work on lab 6 test 14 (has CALL, RETURN)
-- does not work on lab 6 test 17 (has CALL, RETURN)
-- does not work on lab 6 test 18 (has CALL, RETURN)
-- does not work on lab 6 test 19 (has CALL, RETURN)
+- WORKS on lab 6 test 13 (has CBON, CCBOFF, MOVE) 
+- WORKS on lab 6 test 14 (has CALL, RETURN)
+- WORKS on lab 6 test 17 (has CALL, RETURN)
+- WORKS on lab 6 test 18 (has CALL, RETURN)
+- does not work on lab 6 test 19 (has NESTED CALLS)
