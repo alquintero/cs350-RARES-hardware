@@ -8,7 +8,7 @@ NOTE: To open .circ files:
 
 ## DESIGN DOC
 
-*For 3/3/18 Due Date.*
+*For 3/3/19 Due Date.*
 Our original idea for the hardware was to create a currently unused opcode for our putchar function and process it through the ALSU similarly to previously created functions in CS240. 
 
 Two parameters: 
@@ -25,3 +25,6 @@ Notes for microprocessor:
 - WORKS on lab 6 test 17 (has CALL, RETURN)
 - WORKS on lab 6 test 18 (has CALL, RETURN)
 - WORKS on lab 6 test 19 (has NESTED CALLS)
+
+*For 3/26/19 Due Date*
+TBD
