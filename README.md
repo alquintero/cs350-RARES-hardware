@@ -26,5 +26,5 @@ Notes for microprocessor:
 - WORKS on lab 6 test 18 (has CALL, RETURN)
 - WORKS on lab 6 test 19 (has NESTED CALLS)
 
-*For 3/26/19 Due Date*
-TBD
+*For 3/26/19 Due Date.*
+In this part of the lab we had to write getchar and implement polling.
