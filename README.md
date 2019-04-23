@@ -9,6 +9,7 @@ NOTE: To open .circ files:
 ## DESIGN DOC
 
 *For 3/3/19 Due Date.*
+
 Our original idea for the hardware was to create a currently unused opcode for our putchar function and process it through the ALSU similarly to previously created functions in CS240. 
 
 Two parameters: 
@@ -27,6 +28,8 @@ Notes for microprocessor:
 - WORKS on lab 6 test 19 (has NESTED CALLS)
 
 *For 3/26/19 Due Date.*
+
 We implemented putchar and getchar using two currently unused opcodes. For intance, the opcode 0010 0100 tells the microprocessor we are performing putchar. The low 8 bits give the adresses of registers which determine where we look for information on which screen we are printing to and what character we are printing, respectively. For example, the code 0x2412 would call purchar, looking in R1 to see which terminal we are printing to (0 for terminal 1, 1 for terminal 2) and looking in R2 for ASCII character code. Now, the opcode 0010 0101 tells the microprocessor we are performing getchar. The low 8 bits give the addresses of registers which determine where we look for information on which keyboard we are getting characters from and where we are putting the character. For example, 0x2534 would call getchar, looking in R3 to see which keyboard we are taking input from (0 for terminal 1, 1 for terminal 2) and storing the input character into R4. Finally, we implemented two opcodes to check whether there is input in keyboard1 and keyboard2. The first is 0010 0110. The lowest 4 bits give the address of the register in which we will store the result. For instance, 0x2605 calls a check on keyboard1, storing 0 in R5 if there are NOT characters in keyboard1 or a 1 in R5 if there ARE characters in keyboard1. The second check code is 0010 0111. The lowest 4 bits give the address of the register in which we will store the result. For instance, 0x2706 call a check on keyboard2, storing 0 in R6 if there are NOT characters in keyboard2 or a 1 in R6 if there ARE characters in keyboard2. All of these data are written into the registers through multiplexers in the ALSU, which depend on 4 bit selectors that come from op control.
 
 *For 4/28/19 Due Date.*
+
