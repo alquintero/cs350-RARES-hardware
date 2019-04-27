@@ -874,9 +874,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="dataWidth" val="16"/>
       <a name="contents">addr/data: 16 16
 e600 f610 e800 f820 eb04 fb00 e600 f610
-e800 f820 100b 4085*0 e300 f300 e404 e400
-2534 9240 e100 f100 2412 2056 4086*0 ed1d
-fd00 20cd eb04 fb00 100b
+e800 f820 100b 4085*0 e300 f300 e404 f400
+2534 9240 e100 f100 2412 2056 4086*0 e301
+f300 2534 9130 9240 e90a f900 3068 b029
+eb1f fb20 190b 6207 e700 f700 e80a f800
+e900 f900 4409 9240 2412 3068 b048 eb21
+fb20 180b 3980 eb13 fb20 100b 6207 3780
+2078
 </a>
     </comp>
     <comp lib="0" loc="(220,150)" name="Tunnel">
