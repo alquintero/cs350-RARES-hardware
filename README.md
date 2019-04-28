@@ -33,13 +33,13 @@ We implemented putchar and getchar using two currently unused opcodes. For intan
 
 *For 4/28/19 Due Date.*
 
-To implement interrupts, we let the hardware have most of the program control. Instead of checking when keyboards 1 and 2 had a character(s), we now had the keyboards automatically call the getchar+putchar function if they had a character. 
+To implement interrupts, we let the hardware have most of the program control. Instead of checking when keyboards 1 and 2 had a character(s), we now had the keyboards automatically call the getchar+putchar functions if they had a character. 
 
 Issues we came across + fixed:
 
 - **Resetting registers that hold key locations in memory.** We still had our infinite loop with busy waiting that would set R6 to 0x1000 and R8 to 0x2000 for the start of keyboard_1_handler and keyboard_2_handler, respectively. 
 - **Branching commands conflict.** We also ran into an issue with conflicting branching commands (within the interrupt handler of keyboard 2) and so we had to manually change some register uses (i.e. not only use R11 but R12 and R13 to keep track of where we need to branch to in certain cases).
 - **Disallowing interrupts within interrupts.** In order to disallow this (as if we allowed it this could lead to starvation), we only allowed an interrupt to be called if:
-1. the keyboard had a character (avaiability bit was on)
+1. the keyboard had a character (availability bit was on)
 2. the machine code was in the infinite loop (we weren't in another interrupt)
 3. the R6 register for the keyboard_1_handler = 1000 or the R8 register for the keyboard_2_handler = 2000 (for the corresponding interrupt requested)
